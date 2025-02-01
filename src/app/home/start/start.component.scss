@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    height: fit-content;
+}
+  
+  .left, .right {
+    flex: 1; 
+    padding: 0;
+    min-width: 20rem;
+  }
+
+  .left {
+    text-align: center;
+    padding: 15rem 0;
+  }
+
+h1, h4{
+    font-family: 'Body Grotesque Larger';
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 6.5rem;
+    letter-spacing: .325rem;
+    line-height: .95;
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+    h1 i {
+        color: var(--primary-brand-color);
+        font-style: normal;
+    }
+
+.right img:first-child {
+    height: 100%;
+    object-fit: cover;
+    width: 80%;
+    max-width: 40rem;
+}
+
+.right img:last-child {
+    object-fit: fill;
+    height: 85%;
+    position: inherit;
+    margin-left: -14rem;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin: 4rem 0 0 3rem;
+    padding: 0;
+}
+
+p {
+    max-width: 22rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+div.bottom-button {
+    width: 100%;
+    text-align: center;
+    margin-top: -10rem;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: .45rem;
+    border-radius: 3rem;
+    border-style: solid;
+    font-size: 1.1rem;
+    padding: .8rem 2rem;
+    transition: .3s ease;
+}
+
+    button:hover {
+        cursor: pointer;
+        letter-spacing: .15rem;
+    }
+
+    button img {
+        width: 14rem;
+        padding-left: 3rem;
+        padding-right: 0;
+        transition: .3s ease;
+    }
+
+    button:hover img {
+        width: 10rem;
+        padding-left: 2rem;
+    }

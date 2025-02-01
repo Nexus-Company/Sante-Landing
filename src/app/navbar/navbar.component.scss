@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    position: absolute;
+    width: 45%;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    margin: 0 2rem;
+  }
+
+  .nav-links li a:hover {
+    color: var(--primary-brand-color);
+  }
