@@ -31,3 +31,11 @@
   .nav-links li a:hover {
     color: var(--primary-brand-color);
   }
+
+  .nav-links {
+    padding: 1rem 0;
+  }
+
+  .nav-links:first-child{
+    padding: 0;
+  }

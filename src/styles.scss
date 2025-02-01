@@ -11,8 +11,23 @@
 }
 
 @font-face {
-    font-family: 'Body Grotesque Larger';
+    font-family: 'Body Grotesque Regular';
     src: url('./assets/fonts/body-grotesque-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Body Grotesque Bold';
+    src: url('./assets/fonts/Body-Grotesque-Fit-Bold-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Sloop Script Pro';
+    src: url('./assets/fonts/Sloop-ScriptThree.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,3 +39,22 @@ html, body {
     background-color: #000;
     color: #FFF;
 }
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+img.burger{
+    width: 4rem;
+    color: white;
+}
+    
+    img.burger:hover {
+        color: lightgray;
+    }
