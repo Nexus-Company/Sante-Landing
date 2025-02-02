@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeStartComponent {
 
+  rolarParaContato() {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

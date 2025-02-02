@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class NavbarComponent {
-
+  rolarParaOurServices() {
+    document.getElementById('our-services')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

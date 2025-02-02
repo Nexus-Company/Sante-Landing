@@ -11,6 +11,13 @@
 }
 
 @font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Body Grotesque Regular';
     src: url('./assets/fonts/body-grotesque-regular.ttf') format('truetype');
     font-weight: normal;
@@ -24,10 +31,23 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Sloop Script Pro';
     src: url('./assets/fonts/Sloop-ScriptThree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'High Cruiser';
+    src: url('./assets/fonts/HighCruiser-PersonalUseOnly.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moontime';
+    src: url('./assets/fonts/FontsFree-Net-MoonTime-Regular-1.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,10 +66,6 @@ img {
     -webkit-user-drag: none;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 img.burger{
     width: 4rem;
     color: white;
@@ -57,4 +73,25 @@ img.burger{
     
     img.burger:hover {
         color: lightgray;
+    }
+
+button {
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins';
+    letter-spacing: .45rem;
+    border-radius: 3rem;
+    border-style: solid;
+    font-size: 1.1rem;
+    padding: .8rem 2rem;
+    transition: .3s ease;
+    border-color: white;
+    height: fit-content;
+    width: fit-content;
+}
+    
+    button:hover {
+        cursor: pointer;
+        letter-spacing: .15rem;
+        border-width: .5px;
     }

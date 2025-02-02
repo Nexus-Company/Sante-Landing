@@ -1,0 +1,33 @@
+.contact{
+    text-align: center;
+    margin: 10rem 0;
+}
+
+.contact div{
+    display: inline-flex;
+}
+
+.contact h1,
+.contact h4 {
+    width: fit-content;
+    font-family: 'DM Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact h1 {
+    font-size: 11vw;
+    margin: 0;
+    padding: 0;
+}
+
+.contact h4 {
+    color: var(--primary-brand-color);
+    margin: 8% 0;
+    font-size: 1.1vw;
+    text-align: left;
+}
+
+.contact .second h1::first-letter {
+    font-family: 'Moontime'; 
+  }
