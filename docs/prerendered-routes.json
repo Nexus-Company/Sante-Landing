@@ -1,7 +1,3 @@
 {
-  "routes": {
-    "/Sante-Landing": {},
-    "/Sante-Landing/about": {},
-    "/Sante-Landing/home": {}
-  }
+  "routes": {}
 }

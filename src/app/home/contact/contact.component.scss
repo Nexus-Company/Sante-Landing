@@ -1,6 +1,7 @@
 .contact{
     text-align: center;
-    margin: 10rem 0;
+    margin: 14vw 0;
+    line-height: .9;
 }
 
 .contact div{
@@ -23,11 +24,19 @@
 
 .contact h4 {
     color: var(--primary-brand-color);
-    margin: 8% 0;
+    margin: 5% 0;
     font-size: 1.1vw;
     text-align: left;
+    line-height: 1;
 }
 
 .contact .second h1::first-letter {
     font-family: 'Moontime'; 
+  }
+
+  button {
+    padding: 2vw 4vw;
+    font-size: 2.5vw;
+    border-radius: 5vw;
+    margin: 2% 1.5rem;
   }
