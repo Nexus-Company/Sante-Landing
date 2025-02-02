@@ -1,56 +1,60 @@
+
 .sentence {
-    max-width: 17.5rem;
-    text-align: justify;
+  max-width: 17.5rem;
+  text-align: justify;
 }
 
 .right-sentence {
-    width: fit-content;
-    margin: 6rem;
+  width: fit-content;
+  margin-right: 5rem;
 }
 
 .right-sentence button {
-    background-color: var(--primary-brand-color);
-    color: white;
-    border: none;
-    font-style: bold;
-    font-family: 'Poppins';
-    padding: 0 4rem;
-    font-size: large;
-    width: 100%;
-    margin-top: 4rem;
+  background-color: var(--primary-brand-color);
+  color: white;
+  border: none;
+  font-style: bold;
+  font-family: 'Poppins';
+  padding: 0 4rem;
+  font-size: large;
+  width: 100%;
+  margin-top: 4rem;
 }
 
-div.image {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-    div.image img {
-        max-width: 35%;
-        margin-top: .62rem;
-        height: 100%;
-        object-fit: cover;
-    }
 
 .left-sentence p{
-    font-size: 9rem;
-    line-height: 0;
-    font-family: 'Sloop Script Pro';
-    margin: 8rem 0;
-}    
+  font-size: 9rem;
+  line-height: 0;
+  font-family: 'Sloop Script Pro';
+  margin: 8rem 0;
+  z-index: 9999;
+  margin-left: 5rem;
+}
 
-    .left-sentence p:nth-child(1),
-    .left-sentence p:nth-child(3) {
-        font-family: 'Body Grotesque Bold';
-        font-size: 8rem;
-    }
+  .left-sentence p:nth-child(1),
+  .left-sentence p:nth-child(3) {
+      font-family: 'Body Grotesque Bold';
+      font-size: 8rem;
+  }
 
 .sentences {
-    display: inline-flex;
-    position: absolute;
-    z-index: 1;
-    justify-content: space-between;
-    width: 100%;
+display: flex;
+flex-direction: row;
+align-items: flex-start; /* Alinha os textos no topo */
+justify-content: space-between;
+width: 100%;
+gap: 2rem;
+}
+
+.image img {
+width: 100%;
+max-height: 100%;
+object-fit: cover;
+}
+.container-flex {
+display: flex;
+width: 100%;
+height: 100vh;
+gap: 20px;
+padding: 20px;
 }
