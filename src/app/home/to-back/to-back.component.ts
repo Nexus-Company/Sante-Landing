@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   imports: []
 })
 export class ToBackComponent {
-
+  
+  rolarParaContato() {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
