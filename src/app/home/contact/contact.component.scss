@@ -71,9 +71,13 @@
         margin: 0 .65rem;
     }
 
-    .mobile h1 ,
-    .mobile h4 {
-        writing-mode: sideways-lr;
+    @supports (writing-mode: vertical-rl) {
+        .mobile h1 ,
+        .mobile h4 {
+            writing-mode: sideways-lr;
+            text-orientation: sideways;
+            white-space: nowrap;
+        }
     }
 
     .mobile h1 {
@@ -96,5 +100,31 @@
         padding: 1rem 5rem;
         margin: 2rem auto;
         font-weight: normal;
+    }
+
+    @supports not (writing-mode: vertical-rl) {
+        .mobile .contact {
+            flex-direction: column;
+            margin: 40vw 0;
+        }
+
+        .mobile .second {
+          flex-direction: row-reverse;
+        }
+
+        .mobile h4 {
+          text-align: left;
+          font-size: 2.5vw;
+          margin: 4vw 1vw;
+        }
+
+        .mobile h1 {
+            font-size: 15vw;
+            margin-bottom: 1rem;
+        }
+        
+        .mobile button {
+            margin: 5rem auto;
+        }
     }
 }
