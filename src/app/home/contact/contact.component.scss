@@ -4,9 +4,9 @@
     line-height: .9;
 }
 
-.contact div{
-    display: inline-flex;
-}
+    .contact div{
+    	display: inline-flex;
+    }
 
 .contact h1,
 .contact h4 {
@@ -40,3 +40,61 @@
     border-radius: 5vw;
     margin: 2% 1.5rem;
   }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .mobile {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1vw 0;
+    }
+
+    .mobile .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .mobile .contact div {
+        margin: 0 .65rem;
+    }
+
+    .mobile h1 ,
+    .mobile h4 {
+        writing-mode: sideways-lr;
+    }
+
+    .mobile h1 {
+        font-size: 21vw;
+    }
+
+    .second {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .mobile h4 {  
+        font-size: 3vw;
+        text-align: center;
+        margin: 3vw 5vw;
+    }
+
+    button {
+        letter-spacing: normal;
+        padding: 1rem 5rem;
+        margin: 2rem auto;
+        font-weight: normal;
+    }
+}

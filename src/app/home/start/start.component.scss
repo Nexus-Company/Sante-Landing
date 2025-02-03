@@ -84,3 +84,76 @@ div.bottom-button {
         border-width: .3px;
         letter-spacing: .45rem;
     }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;        
+    }
+
+    .container .left {
+        padding: 8rem 0 2rem 0;
+    }
+
+    .mobile {
+        display: inherit;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .mobile .right{
+        display: flex;
+        text-align: center;
+        min-width: 0;
+        justify-content: center;
+    }
+
+    .mobile img {
+        width: 4rem;
+    }
+
+    .mobile img:last-child {
+        height: auto;
+        margin: 2rem 0 2rem -5rem;
+    }
+
+    .mobile img:first-child {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    p{
+        max-width: 19rem;
+    }
+
+    div.bottom-button{
+        margin: 1rem;
+        text-align: center;
+    }
+
+    button {
+        display: flex;
+        padding: 1rem 2rem;
+        margin: auto;
+        max-width: 22rem;
+    }
+
+        button img {
+            display: none;
+        }
+
+    h4 {
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
