@@ -71,7 +71,7 @@
         margin: 0 .65rem;
     }
 
-    @supports (writing-mode: vertical-rl) {
+    @supports (writing-mode: sideways-lr) {
         .mobile h1 ,
         .mobile h4 {
             writing-mode: sideways-lr;
@@ -102,7 +102,7 @@
         font-weight: normal;
     }
 
-    @supports not (writing-mode: vertical-rl) {
+    @supports not (writing-mode: sideways-lr) {
         .mobile .contact {
             flex-direction: column;
             margin: 40vw 0;
