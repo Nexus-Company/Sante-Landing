@@ -15,4 +15,16 @@ export class OurServicesComponent {
   gotoProjects(){
     this.router.navigate(['/our-services/editorial-projects'])
   }
+
+  gotoMarketingaAdisory() {
+    this.router.navigate(['/our-services/marketing-adisory'])
+  }
+  
+  gotoCreativeConsulting() {
+    this.router.navigate(['/our-services/creative-consulting'])
+  }
+
+  gotoSocialManagement() {
+    this.router.navigate(['/our-services/social-management'])
+  }
 }
